@@ -1,17 +1,21 @@
 function negate(a) {
   // your code here
+  return !a;
 };
 
 function both(a, b) {
   // your code here
+  return a&&b? true:false;
 };
 
 function either(a, b) {
   // your code here
+  return a||b? true:false;
 };
 
 function none(a, b) {
   // your code here
+  return !a&&!b? true:false;
 };
 
 function one(a, b) {
