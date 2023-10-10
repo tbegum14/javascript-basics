@@ -1,16 +1,16 @@
 function add (a, b) {
   // your code here
-  return a+b;
+  return a+b
 }
 
 function subtract (a, b) {
   // your code here
-  return a-b;
+  return a-b
 }
 
 function multiply (a, b) {
   // your code here
-  return a*b;
+  return a*b
 }
 
 function divide (a, b) {
