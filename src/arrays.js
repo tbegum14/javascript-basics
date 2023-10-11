@@ -61,19 +61,22 @@ const removeNthElement2 = (index, array) => {
 
 const elementsStartingWithAVowel = strings => {
   // your code here
-  return array.filter(word=>word.charAt(0)===/[aeiou]/i)
+  return strings.filter(word=>word.charAt(0)=='a'|| word.charAt(0)=='e' || word.charAt(0)=='i' || word.charAt(0)=='o' || word.charAt(0)=='u')
 };
 
 const removeSpaces = string => {
   // your code here
+  return string.split(' ').join('')
 };
 
 const sumNumbers = numbers => {
   // your code here
+  return numbers.reduce((a,b)=>a+b,0)
 };
 
 const sortByLastLetter = strings => {
   // your code here
+  
 };
 
 module.exports = {
