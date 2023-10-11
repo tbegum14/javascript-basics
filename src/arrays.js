@@ -76,8 +76,7 @@ const sumNumbers = numbers => {
 
 const sortByLastLetter = strings => {
   // your code here
-  return strings.split
-  
+  return ((strings.map(word=>word.split('').reverse().join(''))).sort()).map(word=>word.split('').reverse().join(''))  
 };
 
 module.exports = {
