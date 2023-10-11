@@ -61,7 +61,7 @@ const removeNthElement2 = (index, array) => {
 
 const elementsStartingWithAVowel = strings => {
   // your code here
-  return strings.filter(word=>word.charAt(0)=='a'|| word.charAt(0)=='e' || word.charAt(0)=='i' || word.charAt(0)=='o' || word.charAt(0)=='u')
+  return strings.filter(word=>/^[aeiou]/i.test(word))
 };
 
 const removeSpaces = string => {
@@ -76,6 +76,7 @@ const sumNumbers = numbers => {
 
 const sortByLastLetter = strings => {
   // your code here
+  return strings.split
   
 };
 
