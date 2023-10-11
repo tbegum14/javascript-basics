@@ -41,22 +41,27 @@ const numbersToStrings = numbers => {
 
 const uppercaseWordsInArray = strings => {
   // your code here
+  return strings.map((word)=>word.toUpperCase())
 };
 
 const reverseWordsInArray = strings => {
   // your code here
+  return strings.map(word=>word.split('').reverse().join(''))
 };
 
 const onlyEven = numbers => {
   // your code here
+  return numbers.filter(num=>num%2===0)
 };
 
 const removeNthElement2 = (index, array) => {
   // your code here
+  return array.filter(item=>array.indexOf(item)!=index)
 };
 
 const elementsStartingWithAVowel = strings => {
   // your code here
+  return array.filter(word=>word.charAt(0)===/[aeiou]/i)
 };
 
 const removeSpaces = string => {
