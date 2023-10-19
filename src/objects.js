@@ -45,11 +45,11 @@ const findHondas = cars => {
   // your code here
   const array = []
   for (let i=0;i<cars.length;i++){
-    if (cars[i].manufacturer === "Honda"){
+     if (cars[i].manufacturer==="Honda"){
       array.push(cars[i])
-    }
-    return array
+     }
   }
+  return array
 };
 
 const averageAge = people => {
@@ -63,6 +63,13 @@ const averageAge = people => {
 
 const createTalkingPerson = (name, age) => {
   // your code here
+  return {
+    name: name,
+    age: age,
+    introduce: (friend)=>{
+      return `Hi ${friend}, my name is ${name} and I am ${age}!`
+    }
+  }
 };
 
 module.exports = {
