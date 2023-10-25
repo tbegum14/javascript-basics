@@ -76,6 +76,7 @@ const sumNumbers = numbers => {
 
 const sortByLastLetter = strings => {
   // your code here
+  //return strings.sort((str1, str2)=>str1.reverse()-str2.reverse())
   return ((strings.map(word=>word.split('').reverse().join(''))).sort()).map(word=>word.split('').reverse().join(''))  
 };
 

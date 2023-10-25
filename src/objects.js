@@ -1,6 +1,6 @@
 const createPerson = (name, age) => {
   // your code here
-  return {"name": name, "age": age}
+  return {name, age}
 };
 
 const getName = object => {
@@ -64,10 +64,10 @@ const averageAge = people => {
 const createTalkingPerson = (name, age) => {
   // your code here
   return {
-    name: name,
-    age: age,
-    introduce: (friend)=>{
-      return `Hi ${friend}, my name is ${name} and I am ${age}!`
+    name,
+    age,
+    introduce(friend) {
+      return `Hi ${friend}, my name is ${this.name} and I am ${this.age}!`
     }
   }
 };
