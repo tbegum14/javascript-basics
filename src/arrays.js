@@ -61,9 +61,10 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  charCodeAt
-  return ((strings.map(word=>word.split('').reverse().join(''))).sort()).map(word=>word.split('').reverse().join(''))  
-};
+  
+  strings.sort((a,b)=>a.charCodeAt(a.length-1)-b.charCodeAt(b.length-1))
+  return strings
+}
 
 module.exports = {
   getNthElement,
