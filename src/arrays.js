@@ -1,8 +1,5 @@
 const getNthElement = (index, array) => {
-  while (index>=array.length){
-    index = index - array.length
-  }
-  return array[index];
+  return array[index%array.length]
 };
 
 const arrayToCSVString = array => {
@@ -19,13 +16,10 @@ const addToArray = (element, array) => {
 
 const addToArray2 = (element, array) => {
   return array.concat(element)
- 
-
 };
 
 const removeNthElement = (index, array) => {
   return array.splice(index, 1)
-
 };
 
 const numbersToStrings = numbers => {
@@ -61,9 +55,8 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  
-  strings.sort((a,b)=>a.charCodeAt(a.length-1)-b.charCodeAt(b.length-1))
-  return strings
+  return strings.sort((a,b)=>a.charCodeAt(a.length-1)-b.charCodeAt(b.length-1))
+   
 }
 
 module.exports = {

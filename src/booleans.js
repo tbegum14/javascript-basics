@@ -15,11 +15,11 @@ function none(a, b) {
 };
 
 function one(a, b) {
-  return (a&&!b || !a&b)? true:false;
+  return (a&&b === false)|| (b&&a === false)
 };
 
 function truthiness(a) {
-  return a? true: false;
+  return !!a;
 };
 
 function isEqual(a, b) {
@@ -48,18 +48,15 @@ function isSquare(a) {
 };
 
 function startsWith(char, string) {
-  // your code here
   return string.charAt(0) === char
 };
 
 function containsVowels(string) {
-  // your code here
   return /[aeiou]/gi.test(string);
 };
 
 function isLowerCase(string) {
-  // your code here
-  return !/[ABDCDEFGHIJKLMNOPQRSTUVWXYZ]/g.test(string);
+  return string===string.toLowerCase();
 
 };
 

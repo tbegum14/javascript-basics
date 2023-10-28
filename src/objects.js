@@ -11,11 +11,11 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-  return object[property]? true: false;
+  return !!object[property]
 };
 
 const isOver65 = person => {
-  return person.age>65? true:false;
+  return person.age>65
 };
 
 const getAges = people => {
@@ -27,21 +27,11 @@ const getAges = people => {
 };
 
 const findByName = (name, people) => {
-for (let i=0;i<people.length;i++){
-  if (people[i].name === name){
-    return people[i]
-  }
+  return people.filter(person=>person.name===name)[0]
 }
-};
 
 const findHondas = cars => {
-  const array = []
-  for (let i=0;i<cars.length;i++){
-     if (cars[i].manufacturer==="Honda"){
-      array.push(cars[i])
-     }
-  }
-  return array
+  return cars.filter(car=>car.manufacturer==='Honda')
 };
 
 const averageAge = people => {
